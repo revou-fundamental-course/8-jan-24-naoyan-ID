@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Matematika</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1><span>Katik</span> Kalkulator Matematik</h1>
+      <h2>selamat datang di kalkulator luas dan keliling persegi</h2>
+      <p>
+        web ini digunakan untuk menghitung luas dan keliling dalam rangka
+        menyelesaikan mini project Revou
+      </p>
+      <hr />
+    </div>
+    <div class="luas">
+      <label for="sisi-luas">Hitung Luas Persegi</label>
+      <input type="number" placeholder="nilai sisi" id="sisi-luas" />
+    </div>
+    <div class="tombol">
+      <button type="button" onclick="hitungluas()">Hitung</button>
+      <button type="reset" onclick="resetluas()">Reset</button>
+    </div>
+    <div class="hasil">
+      <p id="luas"></p>
+    </div>
+    <hr />
+
+    <div class="keliling">
+      <label for="sisi-keliling">Hitung Keliling Persegi</label>
+      <input type="number" placeholder="nilai sisi" id="sisi-keliling" />
+    </div>
+    <div class="tombol">
+      <button type="button" onclick="hitungkeliling()">Hitung</button>
+      <button type="reset" onclick="resetkeliling()">Reset</button>
+    </div>
+    <div class="hasil">
+      <p id="keliling"></p>
+    </div>
+  </body>
+</html>

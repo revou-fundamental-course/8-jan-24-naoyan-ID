@@ -1,7 +1,15 @@
 function hitungluas() {
   var PanjangSisi = document.getElementById("sisi-luas").value;
   var luas = PanjangSisi * PanjangSisi;
-  document.getElementById("luas").innerHTML = "Luas Persegi = " + luas;
+  document.getElementById("luas").innerHTML =
+    "LUAS PERSEGI = SISI x SISI <br>" +
+    "LUAS PERSEGI = " +
+    PanjangSisi +
+    " x " +
+    PanjangSisi +
+    "<br>" +
+    "LUAS PERSEGI = " +
+    luas;
 }
 function resetluas() {
   document.getElementById("sisi-luas").value = "";
@@ -11,7 +19,12 @@ function hitungkeliling() {
   var PanjangSisi = document.getElementById("sisi-keliling").value;
   var keliling = 4 * PanjangSisi;
   document.getElementById("keliling").innerHTML =
-    "Keliling Persegi = " + keliling;
+    "KELILING PERSEGI = 4 x SISI <br>" +
+    "KELILING PERSEGI = 4 x " +
+    PanjangSisi +
+    "<br>" +
+    "KELILING PERSEGI = " +
+    keliling;
 }
 function resetkeliling() {
   document.getElementById("sisi-keliling").value = "";
